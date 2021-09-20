@@ -1,1 +1,56 @@
 /*Maak hier jouw CSS!*/
+
+body {
+    background-color: hsl(56, 97%, 87%);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 50px 190px 100px auto 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    grid-template-areas:
+            "a c c"
+            "b c c"
+            "b e d"
+            "b e x"
+            "f f f";
+}
+
+.item {
+    background-color: hsl(5, 100%, 67%);
+    border: 1px solid hsl(5, 100%, 31%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 {
+    grid-area: a;
+}
+
+.item2 {
+    grid-area: b;
+}
+
+.item3 {
+    grid-area: c;
+}
+
+.item4 {
+    grid-area: d;
+}
+
+.item5 {
+    grid-area: e;
+}
+
+.item6 {
+    grid-area: f;
+}
+
+.itemleeg {
+    grid-area: x;
+}
+
